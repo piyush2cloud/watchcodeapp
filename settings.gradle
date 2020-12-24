@@ -1,0 +1,3 @@
+include ':immersivewear'
+include ':app'
+rootProject.name = "Immersion Neuro"
