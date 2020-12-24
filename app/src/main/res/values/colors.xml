@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#14547F</color>
     <color name="colorAccent">#E6AF2E</color>
     <color name="ic_launcher_background">#1B6FA6</color>
+    <color name="blue">#2f78e5</color>
+    <color name="dark_orange">#FF8C00</color>
+    <color name="ultra_light_gray">#DCDCDC</color>
+    <color name="light_sky">#f1f9ff</color>
+    <color name="deep_light_sky">#94cdfd</color>
+    <color name="light_blue">#b2d3eb</color>
 </resources>

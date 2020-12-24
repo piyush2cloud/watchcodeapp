@@ -32,24 +32,31 @@ open class WearConnectionAcitivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wear_connection_acitivity)
+        setContentView(R.layout.pair_ble2)
         //get the widgets
-        mStartButton = findViewById(R.id.sendbtn)
-        mStopButton = findViewById(R.id.stopBtn)
 
-        mHeart = findViewById(R.id.heartRate)
-        mBattery = findViewById(R.id.battery)
-        mDevice = findViewById(R.id.device)
-
-        mStartButton?.setOnClickListener(View.OnClickListener {
-            SendThread(datapath, "START").start();
-        })
-
-        // Register the local broadcast receiver
-        val messageFilter = IntentFilter(Intent.ACTION_SEND)
-        val messageReceiver: MessageReceiver = MessageReceiver()
-        LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, messageFilter)
     }
+
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_wear_connection_acitivity)
+//        //get the widgets
+//        mStartButton = findViewById(R.id.sendbtn)
+//        mStopButton = findViewById(R.id.stopBtn)
+//
+//        mHeart = findViewById(R.id.heartRate)
+//        mBattery = findViewById(R.id.battery)
+//        mDevice = findViewById(R.id.device)
+//
+//        mStartButton?.setOnClickListener(View.OnClickListener {
+//            SendThread(datapath, "START").start();
+//        })
+//
+//        // Register the local broadcast receiver
+//        val messageFilter = IntentFilter(Intent.ACTION_SEND)
+//        val messageReceiver: MessageReceiver = MessageReceiver()
+//        LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, messageFilter)
+//    }
 
     //setup a broadcast receiver to receive the messages from the wear device via the listenerService.
     inner class MessageReceiver : BroadcastReceiver() {
@@ -94,8 +101,9 @@ open class WearConnectionAcitivity : AppCompatActivity(), View.OnClickListener {
 
                 //Now send the message to each device.
                 for (node in nodes) {
-                    val sendMessageTask: Task<Int> = Wearable.getMessageClient(this@WearConnectionAcitivity)
-                        .sendMessage(node.getId(), path, message.toByteArray())
+                    val sendMessageTask: Task<Int> =
+                        Wearable.getMessageClient(this@WearConnectionAcitivity)
+                            .sendMessage(node.getId(), path, message.toByteArray())
                     try {
                         val result: Int = Tasks.await(sendMessageTask)
                         Log.v(
