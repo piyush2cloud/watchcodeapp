@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imersion_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+
+        android:layout_marginEnd="16dp"
+        android:paddingStart="-150dp"
+        android:src="@drawable/immersion_logo_tight_blue_2f7ae5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/fitness_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/fitness_sensor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pairing_fitness_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/pairing_fitness_sensor"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitness_imageView" />
+
+    <TextView
+        android:id="@+id/select_your_sensor_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/select_your_sensor"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pairing_fitness_textview" />
+
+
+    <TextView
+        android:id="@+id/device1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_sky"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Scosche 1480921"
+        android:textColor="@color/deep_light_sky"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_your_sensor_textview" />
+
+    <TextView
+        android:id="@+id/device2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_sky"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="Wahoo A2134"
+        android:textColor="@color/deep_light_sky"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device1" />
+
+    <TextView
+        android:id="@+id/device3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_blue"
+        android:fontFamily="@font/roboto_bold"
+
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="Scosche 99876"
+        android:textColor="@color/deep_light_sky"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device2" />
+
+    <TextView
+        android:id="@+id/device4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/light_sky"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="Oura Ring 123456"
+        android:textColor="@color/deep_light_sky"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device3" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="1"
+        android:background="@color/blue"
+        android:fontFamily="@font/roboto_bold"
+        android:minWidth="242dp"
+        android:minHeight="54dp"
+        android:text="@string/done"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demo.AsyncMagicReadyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".demo.AsyncMagicReadyFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light_300"
+            android:text="New event of thing video"
+            android:textColor="#6A6A6A"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="250dp"
+            android:src="@drawable/screenshot_thumb" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:fontFamily="@font/roboto_light_300"
+            android:gravity="center"
+            android:lineHeight="35dp"
+            android:text="This event is about to begin. \n\nPlease stand by…"
+            android:textColor="#191919"
+            android:textSize="25sp"
+            app:lineHeight="35dp" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -12,4 +12,58 @@
     <string name="unknown_service">Unknown Service - %s</string>
     <string name="value">Value: %s</string>
     <string name="characteristics">Characteristics</string>
+    <string name="logged_in_text">Logged In</string>
+    <string name="onboarding_desc_text">We measure what\nthe world loves,\nso you can\ncreate more of it.</string>
+    <string name="onboarding2_desc_text">What your brain experiences,\nyour heart shares with\nthe world.
+</string>
+
+
+    <string name="title_activity_demo">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up_text">Sign Up</string>
+
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="or_text">-or-</string>
+    <string name="full_name_text">Full Name</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="password_text">Password</string>
+
+    <string name="continue_guest">Continue as <u>Guest</u></string>
+    <string name="term_and_condition_text">By Creating an account, you are agreeing to our\n<u>Terms &amp;Conditions</u></string>
+    <string name="magic_number_desc">Where you invited to join an\nexperince with a\MAGIC NUMBER?</string>
+    <string name="enter_number_below_text">Enter the number below:</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="select_your_smartwatch">Select your Smartwatch:</string>
+    <string name="sensor_is_connected">Sensor is Connected</string>
+    <string name="data_is_received">Data is being received</string>
+    <string name="imersion_is_calculating">Imersion is calculating</string>
+    <string name="see_the_results">See the Results!</string>
+    <string name="watch_image_desc">By using the smart watch\nyou already wear,we\ncan measure what your\nbrain truly values.</string>
+    <string name="onboarding_4_desc">Don\'t worry. It\'s safe &amp; your\nprivacy is always protected.\nYour data is secure and only\nshared by you.</string>
+
+    <string name="pairing_fitness_sensor">Pairing your Fitness Sensor</string>
+    <string name="set_your_fitness_sensor_pairing_mode">Set your fitness sensor\nto pairing mode.</string>
+    <string name="search">Search</string>
+    <string name="select_your_sensor">Select your sensor:</string>
+    <string name="done">Done!</string>
+    <string name="help">Help</string>
+    <string name="pairing_your_samsung_watch">Pairing your Samsung Watch</string>
+    <string name="samsung_pairing_text1"><font color='#2f78e5'><b><u>Click Here</u></b></font> to install the \nImmersion App on your watch
+</string>
+    <string name="samsung_pairing_text2">Enter your Pairing Code
+</string>
+    <string name="samsung_pairing_text3">Press \"Join\" on the watch
+</string>
+    <string name="samsung_pairing_text4">Your watch should look like \nthe picture below</string>
+    <string name="pairing_google_wacth">Pairing your Google Watch</string>
+    <string name="pairing_your_apple_watch">Pairing your Apple Watch</string>
+    <string name="new_event_thing_video_text">New event of thing video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

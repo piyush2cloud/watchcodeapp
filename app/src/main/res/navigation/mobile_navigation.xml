@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.immersion.neuro.demo.HomePendingFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_pending" />
+    <fragment
+        android:id="@+id/homeReportsFragment"
+        android:name="com.immersion.neuro.demo.HomeReportsFragment"
+        android:label="HomeReportsFragment" />
+    <fragment
+        android:id="@+id/homeReportListFragment"
+        android:name="com.immersion.neuro.demo.HomeReportListFragment"
+        android:label="HomeReportListFragment" />
+
+    <fragment
+        android:id="@+id/homePendingAddFragment"
+        android:name="com.immersion.neuro.demo.HomePendingAddFragment"
+        android:label="HomePendingAddFragment"
+        tools:layout="@layout/fragment_home_pending_add" />
+
+    <fragment
+        android:id="@+id/asyncMagicFragment"
+        android:name="com.immersion.neuro.demo.AsyncMagicFragment" />
+
+    <fragment
+        android:id="@+id/asyncMagicReadyFragment"
+        android:name="com.immersion.neuro.demo.AsyncMagicReadyFragment" />
+
+
+    <fragment
+        android:id="@+id/asyncMagicEndFragment"
+        android:name="com.immersion.neuro.demo.AsyncMagicEndFragment" />
+
+    <fragment
+        android:id="@+id/expSetupFragment"
+        android:name="com.immersion.neuro.demo.ExpSetUp3Fragment">
+        <argument
+            android:name="progress"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/asyncMobile1Fragment"
+        android:name="com.immersion.neuro.demo.AsyncMobile1Fragment" />
+
+    <fragment
+        android:id="@+id/homePendingConnectFragment"
+        android:name="com.immersion.neuro.demo.HomePendingConnectFragment" />
+
+    <fragment
+        android:id="@+id/homePendingLiveFragment"
+        android:name="com.immersion.neuro.demo.HomePendingLiveFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.immersion.neuro.presentation.fragments.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/magicNumberFragment"
+        android:name="com.immersion.neuro.presentation.fragments.MagicNumberFragment"
+        android:label="MagicNumberFragment" />
+    <fragment
+        android:id="@+id/onboardin2Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.Onboardin2Fragment"
+        android:label="Onboardin2Fragment" />
+    <fragment
+        android:id="@+id/onboarding3Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.Onboarding3Fragment"
+        android:label="Onboarding3Fragment" />
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.immersion.neuro.presentation.fragments.OnboardingFragment"
+        android:label="OnboardingFragment" />
+    <fragment
+        android:id="@+id/onborading4Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.Onborading4Fragment"
+        android:label="Onborading4Fragment" />
+    <fragment
+        android:id="@+id/pairBLE2Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.PairBLE2Fragment"
+        android:label="PairBLE2Fragment" />
+    <fragment
+        android:id="@+id/pairBLEScreenFragment"
+        android:name="com.immersion.neuro.presentation.fragments.PairBLEScreenFragment"
+        android:label="PairBLEScreenFragment" />
+    <fragment
+        android:id="@+id/pairSamsungFragment"
+        android:name="com.immersion.neuro.presentation.fragments.PairSamsungFragment"
+        android:label="PairSamsungFragment" />
+    <fragment
+        android:id="@+id/pairTestFragment"
+        android:name="com.immersion.neuro.presentation.fragments.PairTestFragment"
+        android:label="PairTestFragment" />
+    <fragment
+        android:id="@+id/pairWearOSFragment"
+        android:name="com.immersion.neuro.presentation.fragments.PairWearOSFragment"
+        android:label="PairWearOSFragment" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.immersion.neuro.presentation.fragments.SignupFragment"
+        android:label="SignupFragment" />
+    <fragment
+        android:id="@+id/test1Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.Test1Fragment"
+        android:label="Test1Fragment" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.immersion.neuro.presentation.fragments.TestFragment"
+        android:label="TestFragment" />
+    <fragment
+        android:id="@+id/testResultFragment"
+        android:name="com.immersion.neuro.presentation.fragments.TestResultFragment"
+        android:label="TestResultFragment" />
+    <fragment
+        android:id="@+id/test2Fragment"
+        android:name="com.immersion.neuro.presentation.fragments.test2Fragment"
+        android:label="test2Fragment" />
+    <activity
+        android:id="@+id/demoActivity"
+        android:name="com.immersion.neuro.demo.DemoActivity"
+        android:label="DemoActivity" />
+
+</navigation>
