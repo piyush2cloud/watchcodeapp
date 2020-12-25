@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo.ExpSetUp3Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".demo.ExpSetUp3Fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivWear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wearable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_shape"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            app:layout_constraintBottom_toTopOf="@+id/tvStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivWear" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="30dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light_300"
+            android:text="Waiting"
+            android:textColor="#767676"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintBottom_toBottomOf="@+id/ivWear"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light_300"
+            android:gravity="center"
+            android:lineHeight="35dp"
+            android:text="Let’s get started with your Fitbit Versa 2 \n\nPress START on your watch"
+            android:textColor="#191919"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivWear"
+            app:lineHeight="30dp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbChecking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="#2699FB"
+            android:text="Waiting for data…."
+            android:textColor="#2699FB"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cbCalc"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+            app:lineHeight="16dp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbDataRcv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#2699FB"
+            android:text="Data is being received"
+            android:textColor="#2699FB"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cbCalc"
+            app:layout_constraintTop_toBottomOf="@+id/cbChecking"
+            app:lineHeight="16dp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#2699FB"
+            android:text="Immersion is calculating…"
+            android:textColor="#2699FB"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbDataRcv"
+            app:lineHeight="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_button_large"
+            android:text="Help"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnBegin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbCalc" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBegin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_button_large_disable"
+            android:text="Begin"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnHelp"
+            app:layout_constraintTop_toBottomOf="@+id/cbCalc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Mod: New event of thing… ....."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbFirst"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbFirst"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbFirst" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleFirst"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleFirst"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleFirst" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="32dp"
             android:layout_marginRight="16dp"
+            android:background="@android:color/white"
             android:orientation="horizontal"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -27,11 +28,13 @@
 
             <Button
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="54dp"
+
                 android:background="@android:color/white"
                 android:drawableStart="@drawable/ic_gmail"
-                android:paddingStart="12dp"
+                android:drawablePadding="8dp"
+                android:paddingStart="8dp"
                 android:text="@string/sign_up_with_google"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"

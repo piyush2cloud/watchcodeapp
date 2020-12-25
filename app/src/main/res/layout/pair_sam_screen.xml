@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultra_light_gray"
+    android:paddingBottom="16dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imersion_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:layout_marginEnd="16dp"
+            android:paddingStart="-150dp"
+            android:src="@drawable/immersion_logo_tight_blue_2f7ae5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/samsung_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/samsung_galaxy"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pairing_samsung_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/pairing_your_samsung_watch"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/samsung_imageView" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_blue"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pairing_samsung_textview" />
+
+
+        <TextView
+            android:id="@+id/textview1_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/samsung_pairing_text1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/textview1"
+            app:layout_constraintTop_toBottomOf="@+id/pairing_samsung_textview" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_blue"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview1_desc" />
+
+        <TextView
+            android:id="@+id/textview2_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/samsung_pairing_text2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/textview2"
+            app:layout_constraintTop_toBottomOf="@+id/textview1_desc" />
+
+        <TextView
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+
+            android:text="7YTZ5V"
+            android:textColor="@color/dark_orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview2_desc" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_blue"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinview" />
+
+        <TextView
+            android:id="@+id/textview3_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/samsung_pairing_text3"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/textview3"
+            app:layout_constraintTop_toBottomOf="@+id/pinview" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_blue"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview3_desc" />
+
+        <TextView
+            android:id="@+id/textview4_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/samsung_pairing_text4"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/textview4"
+            app:layout_constraintTop_toBottomOf="@+id/textview3_desc" />
+
+        <View
+            android:id="@+id/circleview"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview4_desc" />
+
+        <View
+            android:id="@+id/emptyview"
+            android:layout_width="24dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/unselected_dot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleview" />
+
+        <Button
+            android:id="@+id/help_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_gray"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_bold"
+            android:minWidth="142dp"
+            android:minHeight="54dp"
+            android:text="@string/help"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="@id/emptyview"
+            app:layout_constraintTop_toBottomOf="@+id/circleview" />
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/blue"
+            android:fontFamily="@font/roboto_bold"
+            android:minWidth="142dp"
+            android:minHeight="54dp"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/emptyview"
+            app:layout_constraintTop_toBottomOf="@+id/circleview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

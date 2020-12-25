@@ -32,7 +32,7 @@ open class WearConnectionAcitivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pair_ble2)
+        setContentView(R.layout.test_result_screen)
         //get the widgets
 
     }

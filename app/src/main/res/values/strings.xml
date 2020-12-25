@@ -17,6 +17,12 @@
     <string name="onboarding2_desc_text">What your brain experiences,\nyour heart shares with\nthe world.
 </string>
 
+
+    <string name="title_activity_demo">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
     <string name="sign_in_text">Sign In</string>
     <string name="sign_up_text">Sign Up</string>
 
@@ -45,4 +51,19 @@
     <string name="search">Search</string>
     <string name="select_your_sensor">Select your sensor:</string>
     <string name="done">Done!</string>
+    <string name="help">Help</string>
+    <string name="pairing_your_samsung_watch">Pairing your Samsung Watch</string>
+    <string name="samsung_pairing_text1"><font color='#2f78e5'><b><u>Click Here</u></b></font> to install the \nImmersion App on your watch
+</string>
+    <string name="samsung_pairing_text2">Enter your Pairing Code
+</string>
+    <string name="samsung_pairing_text3">Press \"Join\" on the watch
+</string>
+    <string name="samsung_pairing_text4">Your watch should look like \nthe picture below</string>
+    <string name="pairing_google_wacth">Pairing your Google Watch</string>
+    <string name="pairing_your_apple_watch">Pairing your Apple Watch</string>
+    <string name="new_event_thing_video_text">New event of thing video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp">
+
+    <include
+        layout="@layout/layout_search"
+        android:id="@+id/etSearchBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivThumbSecond"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchBox" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBeatFirst"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noun_beat_2835562_3"
+        app:layout_constraintEnd_toEndOf="@+id/ivThumbFirst"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivShieldFirst"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noun_shield_2524772_3"
+        app:layout_constraintEnd_toEndOf="@+id/ivThumbFirst"
+        app:layout_constraintTop_toBottomOf="@+id/ivBeatFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/ivThumbFirst"
+        app:layout_constraintLeft_toRightOf="@+id/ivThumbFirst"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBeatSecond"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noun_beat_2835562_3"
+        app:layout_constraintEnd_toEndOf="@+id/ivThumbSecond"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbSecond" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivShieldSecond"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noun_shield_2524772_2"
+        app:layout_constraintEnd_toEndOf="@+id/ivThumbSecond"
+        app:layout_constraintTop_toBottomOf="@+id/ivBeatSecond" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light_300"
+        android:maxLines="1"
+        android:text="Mod: New event of thing… ....."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbFirst"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbFirst"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbFirst" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleSec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light_300"
+        android:maxLines="1"
+        android:text="Mod: New event of thing…........."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbSecond"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbSecond"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbSecond" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDurationFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleFirst"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleFirst"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleFirst" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleSec"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleSec"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleSec" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbThird"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivThumbFourth"
+        app:layout_constraintTop_toBottomOf="@+id/tvDurationFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbFourth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto_light_300"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/ivThumbThird"
+        app:layout_constraintLeft_toRightOf="@+id/ivThumbThird"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbThird" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleThird"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light_300"
+        android:maxLines="1"
+        android:text="Mod: New event of thing… ....."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbThird"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbThird"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbThird" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleFourth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Mod: New event of thing…........."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbFourth"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbFourth"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbFourth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDurationThird"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleThird"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleThird"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleThird" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleFourth"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleFourth"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleFourth" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbFifth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivThumbFourth"
+        app:layout_constraintTop_toBottomOf="@+id/tvDurationThird" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbSixth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/screenshot_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/ivThumbFifth"
+        app:layout_constraintLeft_toRightOf="@+id/ivThumbFifth"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbFifth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleFifth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light_300"
+        android:maxLines="1"
+        android:text="Mod: New event of thing… ....."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbFifth"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbFifth"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbFifth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvThumbTitleSixth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_light_300"
+        android:maxLines="1"
+        android:text="Mod: New event of thing…........."
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/ivThumbSixth"
+        app:layout_constraintRight_toRightOf="@+id/ivThumbSixth"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbSixth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleFifth"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleFifth"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleFifth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light_300"
+        android:text="5 hours left"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="9sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvThumbTitleSixth"
+        app:layout_constraintRight_toRightOf="@id/tvThumbTitleSixth"
+        app:layout_constraintTop_toBottomOf="@+id/tvThumbTitleSixth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -42,6 +43,15 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
     testImplementation 'junit:junit:4.+'
     implementation "android.arch.lifecycle:livedata:1.1.1"
@@ -55,4 +65,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-wearable:+'
     wearApp project(':immersivewear')
     annotationProcessor 'android.arch.lifecycle:compiler:1.1.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
